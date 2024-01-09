@@ -1,0 +1,356 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(-45deg, #c5cbe3, #bfab6f);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: max-content;
+}
+h2{
+    color:#f13c20;  
+    font-family: cursive;
+    
+}
+.custom-button{
+background :#d79922; 
+font-family: cursive;
+ color:rgb(20, 16, 16);
+  font-size: 17px;
+   border-radius: 15px;
+    font-weight: bold;
+}
+.custom-navbar {
+    background-color: #f13c20;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.fa-home {
+    font-size: 5vh;
+    margin-left: 2vh;
+    color: #ded8d8;
+    transition: color 0.3s ease;
+}
+
+.fa-home:hover {
+    color: #3d22d7;
+}
+
+#bd {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    animation: animateBg 2s infinite linear;
+    background-image: linear-gradient(90deg, #d9530b, #ffde5e, #d9530b, #ffde5e);
+    background-size: 200% 100%;
+    box-shadow: 0 3px 14px #000;
+    border-radius: 1rem;
+    height: max-content;
+}
+
+@keyframes animateBg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+input,
+select {
+    height: 5vh;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.login-button {
+    font-size: 25px;
+    color: #161414;
+    transition: color 0.3s ease;
+    background-color: #d79922;
+    border-radius: 15px;
+    margin-left: 70%;
+    font-family: cursive;
+    padding: 10px 20px;
+}
+
+.login-button:hover {
+    color: #3d22d7;
+}
+
+footer {
+    background-color: #fb6a54;
+    padding: 28px 0;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.label {
+    font-size: 18px;
+    color: #4056a1;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+    h2{
+     margin-top: 25%;
+    color:#f13c20;  
+    font-family: cursive;
+    }
+
+    .custom-navbar {
+        height: 8vh;
+    }
+
+    .fa-home {
+        font-size: 4vh;
+    }
+
+    #bd {
+        width: 70%;
+        padding: 15px;
+        height: max-content;
+    }
+
+    input,
+    select {
+        height: 4vh;
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .login-button {
+        font-size: 20px;
+        margin-left: 60%;
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 14px 0;
+        margin-top: 28%;
+    }
+
+    .footer-content {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+        margin: 0 8px;
+    }
+
+    .label {
+        font-size: 16px;
+    }
+     
+}
+@media only screen and (max-width:360px){
+    body {
+        font-size: 16px;
+        background-repeat: no-repeat;
+    }
+    h2{
+        margin-top: 18%;
+        color:#f13c20;  
+    font-family: cursive;
+    
+    }
+
+    .custom-navbar {
+        height: 8vh;
+    }
+
+    .fa-home {
+        font-size: 6vh;
+    }
+
+    input,
+    select {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .login-button {
+        font-size: 18px;
+        margin-left: 50%;
+        padding: 6px 12px;
+    }
+    .container{
+        padding-bottom: 40%;
+        padding-top: 40%;
+    }
+
+    footer {
+        padding: 10px 0;
+        margin-top: 19%;
+    }
+
+    .footer-content a {
+        font-size: 14px;
+        margin: 0 6px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+    #bd{
+        width: 80%;
+        margin-top:9%;
+        padding: 10px;
+        height: 350px;
+    }
+   
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+        background-repeat: no-repeat;
+    }
+    h2{
+        margin-top: 18%;
+        color:#f13c20;  
+    font-family: cursive;
+    
+    }
+
+    .custom-navbar {
+        height: 8vh;
+    }
+
+    .fa-home {
+        font-size: 6vh;
+    }
+
+    input,
+    select {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .login-button {
+        font-size: 18px;
+        margin-left: 50%;
+        padding: 6px 12px;
+    }
+    .container{
+        padding-bottom: 40%;
+        padding-top: 40%;
+    }
+
+    footer {
+        padding: 10px 0;
+        margin-top: 19%;
+    }
+
+    .footer-content a {
+        font-size: 14px;
+        margin: 0 6px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+    #bd{
+        width: 80%;
+        margin-top:9%;
+        padding: 10px;
+        height: 350px;
+    }
+    
+}
+@media only screen and (max-width: 320px){
+    body {
+        font-size: 16px;
+        background-repeat: no-repeat;
+    }
+    h2{
+        margin-top: -1%;
+        color:#f13c20;  
+    font-family: cursive;
+    
+    }
+
+    .custom-navbar {
+        height: 8vh;
+    }
+
+    .fa-home {
+        font-size: 6vh;
+    }
+
+    input {
+        width: 65%;
+        font-size: 12px;
+    }
+    select {
+        width: 65%;
+        font-size: 6px;
+    }
+
+
+    .login-button {
+        font-size: 14px;
+        margin-left: 50%;
+        padding: 6px 12px;
+    }
+    .container{
+        padding-bottom: 40%;
+        padding-top: 40%;
+    }
+
+    footer {
+        padding: 10px 0;
+        margin-top: 16%;
+    }
+
+    .footer-content a {
+        font-size: 14px;
+        margin: 0 6px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+    #bd{
+        width: 70%;
+        margin-top:0%;
+        padding: 10px;
+        height: 300px;
+    }
+    .custom-button{
+        font-size: 7px;
+        margin-top: 0;
+    }
+
+   
+}

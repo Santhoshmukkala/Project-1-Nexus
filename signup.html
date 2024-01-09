@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name='viewport'
+    content='width=device-width, initial-scale=1.0'
+    >
+    <title>PROJECT 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <form>
+        <nav class="custom-navbar">
+            <a href="Home.html" style="margin-left: 2%; font-size: 40px;"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <button class="login-button" onclick="window.location.href='login.html'"><b>login</b></button>
+        </nav>
+
+        <center>
+            <div>
+                <h2>SignUp</h2>
+            </div>
+        </center>
+        <center>
+            <div id="bd" class="container">
+                <table>
+                    <tr class="label">
+                        <td><label style="margin-left: 6%;">FirstName:<input type="text" name="fname" placeholder="FirstName" required></label></td>
+                        <td><label style="margin-left: 6%;">SurName:<input type="text" name="sname" placeholder="SurName" required></label></td>
+                    </tr>
+                    <tr class="label">
+                        <td><label style="margin-left: 6%;">Mobile:<input type="tel" name="mobile" pattern="[0-9]{10}" maxlength="10" placeholder="Mobile Number" required></label></td>
+                        <td><label style="margin-left: 6%;">Email:<input type="text" name="email" placeholder="Email Id" required></label></td>
+                    </tr>
+                    <tr class="label">
+                        <td><label style="margin-left: 6%;">UserName:<input type="text" name="uname" placeholder="UserName" required></label></td>
+                        <td><label style="margin-left: 6%;">Password:<input type="password" name="cpass" placeholder="Password" required></label></td>
+                    </tr>
+                    <tr class="label">
+                        <td><label style="margin-left: 6%;">DOB:<input type="date" name="dob"></label></td>
+                        <td><label style="margin-left: 6%;">Gender:
+                            <select name="gender" placeholder="Gender">
+                                <option>----select----</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select></label>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td><input type="submit" value="SignUp" class="custom-button"></td>
+                        <td><input type="reset" value="Reset"class="custom-button" ></td>
+                    </tr>
+                </table>
+            </div>
+        </center>
+    </form><br>
+    <footer>
+        <div class="footer-content">
+            <label style="font-family: cursive; font-size: 20px; font-weight: bold;"> Contact us:</label>
+            <a href="mailto:mukkalasanthosh@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/SanthoshM01"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

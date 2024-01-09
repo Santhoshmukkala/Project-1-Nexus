@@ -1,0 +1,424 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(-45deg, #c5cbe3, #bfab6f);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.custom-navbar {
+    background-color: #f13c20;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 10%;
+}
+
+.fa-home {
+    font-size: 5vh;
+    margin-left: 2vh;
+    color: #e8e3e3;
+    transition: color 0.3s ease;
+}
+
+.fa-home:hover {
+    color: #3d22d7;
+}
+
+h2 {
+    color: #f13c20; 
+    font-family: cursive;
+    font-size: 40px;
+}
+
+#bd {
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    animation: animateBg 2s infinite linear;
+    background-image: linear-gradient(90deg, #d9530b, #ffde5e, #d9530b, #ffde5e);
+    background-size: 200% 100%;
+    box-shadow: 0 3px 14px #000;
+    border-radius: 1rem;
+    height: max-content; 
+}
+
+@keyframes animateBg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+input {
+    height: 5vh;
+    width: 100%; 
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    text-align: center;
+}
+
+.custom-button {
+    background: #d79922;
+    color: rgb(14, 13, 13);
+    font-size: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.signup-button {
+    font-size: 25px; 
+    color: #161414;
+    transition: color 0.3s ease;
+    background-color: #d79922;
+    border-radius: 15px;
+    margin-left: 70%;
+    transform: translateX(-50%); 
+    font-family: cursive;
+    padding: 10px 20px;
+}
+
+.signup-button:hover {
+    color: #3d22d7;
+}
+
+footer {
+    background-color: #fb6a54;
+    padding: 35px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 6%;
+    margin-bottom: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.label {
+    font-size: 18px;
+    color: #4056a1;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+    .custom-navbar {
+        height: 20vw;
+        margin-bottom: 40%;
+    }
+
+    .fa-home {
+        font-size: 10vw;
+        margin-left: 4vw;
+    }
+
+    h2 {
+        margin-top: 20%;
+    }
+
+    #bd {
+        width: 80%;
+        margin: 30px 0;
+        padding: 20px;
+        height: max-content;
+    }
+
+    .signup-button {
+        margin-left: 60%;
+        font-size: 6vw;
+    }
+
+    input {
+        font-size: 4vw;
+    }
+
+    input::placeholder {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    footer {
+        height: 60px;
+        padding: 14px 0;
+        overflow: hidden;
+        margin-top: 20%;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+        margin: 0 8px;
+    }
+
+    .label {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    body {
+        font-size: 16px;
+        background-repeat: no-repeat;
+    }
+
+    .custom-navbar {
+        margin-bottom: 15%;
+    }
+
+    .fa-home {
+        font-size: 7vw;
+        margin-left: 6vw;
+    }
+
+    #bd {
+        justify-content: center;
+        width: 70%;
+        margin: 15px;
+        padding: 12px;
+        display: flex;
+        height: max-content;
+        margin-top: 0;
+    }
+
+    .signup-button {
+        margin-left: 50%;
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-top: 20%;
+    }
+
+    input {
+        font-size: 1vw;
+    }
+
+    input::placeholder {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    footer {
+        padding: 17px 0;
+        overflow: hidden;
+        margin-top: 55%;
+        margin-bottom: 0;
+    }
+
+    .footer-content a {
+        font-size: 14px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+    body {
+        font-size: 18px;
+        background-repeat: no-repeat;
+    }
+
+    .custom-navbar {
+        margin-bottom: -10%;
+    }
+
+    .fa-home {
+        font-size: 7vw;
+        margin-left: 6vw;
+    }
+
+    #bd {
+        justify-content: center;
+        width: 70%;
+        margin: 15px;
+        padding: 12px;
+        display: flex;
+        height: max-content;
+        margin-top: 20%;
+    }
+
+    .signup-button {
+        margin-left: 50%;
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    input {
+        font-size: 1vw;
+    }
+
+    input::placeholder {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    footer {
+        padding: 17px 0;
+        overflow: hidden;
+        margin-top: 15%;
+        margin-bottom: 0;
+    }
+
+    .footer-content a {
+        font-size: 14px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body {
+        font-size: 16px;
+        background-repeat: no-repeat;
+    }
+
+    .custom-navbar {
+        margin-bottom: 25%;
+    }
+
+    .fa-home {
+        font-size: 7vw;
+        margin-left: 6vw;
+    }
+
+    #bd {
+        justify-content: center;
+        width: 70%;
+        margin: 15px;
+        padding: 12px;
+        display: flex;
+        height: max-content;
+        margin-top: 20%;
+    }
+
+    .signup-button {
+        margin-left: 50%;
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-top: 12%;
+    }
+
+    input {
+        font-size: 1vw;
+    }
+
+    input::placeholder {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    footer {
+        padding: 17px 0;
+        overflow: hidden;
+        margin-top: 32%;
+        margin-bottom: 0;
+    }
+
+    .footer-content a {
+        font-size: 14px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: 10px;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .fa-home {
+        font-size: 10vw;
+        margin-left: 6vw;
+    }
+
+    #bd {
+        justify-content: center;
+        width: 60%;
+        margin: 15px;
+        padding: 12px;
+        display: flex;
+        height: max-content;
+    }
+
+    .custom-navbar {
+        height: 14vh;
+        margin-bottom: -5%;
+    }
+
+    .signup-button {
+        margin-left: 50%;
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 1vw;
+    }
+
+    input::placeholder {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    footer {
+        padding: 10px 0;
+        overflow: hidden;
+        margin-top: 20%;
+    }
+
+    .footer-content a {
+        font-size: 14px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+}
