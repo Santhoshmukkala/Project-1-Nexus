@@ -68,6 +68,7 @@ input {
     border-radius: 10px;
     margin: 10px;
     font-size: 16px;
+    
 }
 
 input::placeholder {
@@ -160,6 +161,7 @@ footer {
 
     input {
         font-size: 6vw;
+        margin-left:1%;
     }
 
     input::placeholder {
@@ -221,6 +223,7 @@ footer {
 
     input {
         font-size: 4vw;
+        magin-left:1%;
     }
 
     input::placeholder {
@@ -280,6 +283,7 @@ footer {
 
     input {
         font-size: 5vw;
+        margin-left:1%;
     }
 
     input::placeholder {
